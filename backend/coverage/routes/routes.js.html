@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for routes/routes.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">routes</a> routes.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.14% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.62% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/52</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">var express=require('express');
+var router = express.Router();
+var fs = require('fs');
+const joi = require('joi')
+let present= fs.createWriteStream("present.txt");
+let delet=fs.createWriteStream("delete.txt");
+let updated=fs.createWriteStream("update.txt");
+let added=fs.createWriteStream("add.txt");
+var app=express();
+const validator = require('express-joi-validation')({})
+//importing model
+var movie=require('../services/model.js');
+&nbsp;
+var schem = joi.object().keys({
+    movieid: joi.number().integer().required(),
+    moviename: joi.string().alphanum().min(3).required(),
+    rating: joi.number().integer().required()
+  
+    })
+//defining routes
+&nbsp;
+router.get('/', <span class="fstat-no" title="function not covered" >fu</span>nction(req,res){
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  movie.getMovies( <span class="fstat-no" title="function not covered" >fu</span>nction(err,data){</span>
+<span class="cstat-no" title="statement not covered" >     if(err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >      res.json(data)</span>
+<span class="cstat-no" title="statement not covered" >      console.log(data)</span>
+<span class="cstat-no" title="statement not covered" >present.write(JSON.stringify(data)+"\n");</span>
+  
+ }) 
+   
+ 
+})
+console.log("I am in routes file")
+router.post('/',<span class="fstat-no" title="function not covered" >as</span>ync function(req,res){
+<span class="cstat-no" title="statement not covered" >    if(req.body.movieid&amp;&amp;req.body.moviename&amp;&amp;req.body.rating){</span>
+        var newmovie=<span class="cstat-no" title="statement not covered" >{</span>
+            movieid:req.body.movieid,
+            moviename:req.body.moviename,
+            rating:req.body.rating
+        } 
+    }
+    
+<span class="cstat-no" title="statement not covered" >   if(req.query.movieid&amp;&amp;req.query.moviename&amp;&amp;req.query.rating)</span>
+    {
+        var newmovie=<span class="cstat-no" title="statement not covered" >{</span>
+            movieid:req.query.movieid,
+            moviename:req.query.moviename,
+            rating:req.query.rating
+        }
+    }
+&nbsp;
+    
+&nbsp;
+   
+  //  var newmovie={
+   //     movieid:req.body.movieid,
+    //    moviename:req.body.moviename,
+     //   rating:req.body.rating
+//    }
+<span class="cstat-no" title="statement not covered" >await joi.validate(newmovie, schem, <span class="fstat-no" title="function not covered" >fu</span>nction (err, value) {</span>
+    // Value is the parsed and validated document.
+<span class="cstat-no" title="statement not covered" >    if (err) {</span>
+<span class="cstat-no" title="statement not covered" >     console.log("please enter valid details")}</span>
+     else{
+<span class="cstat-no" title="statement not covered" >         movie.addMovies(newmovie, <span class="fstat-no" title="function not covered" >fu</span>nction(err,data){</span>
+<span class="cstat-no" title="statement not covered" >            if(err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >            res.json(data)</span>
+<span class="cstat-no" title="statement not covered" >            console.log(data)</span>
+          
+<span class="cstat-no" title="statement not covered" >            added.write(JSON.stringify(data)+"\n");</span>
+           
+        })
+     }
+  });
+})
+&nbsp;
+router.delete('/:_id',<span class="fstat-no" title="function not covered" >as</span>ync function(req,res){
+  
+<span class="cstat-no" title="statement not covered" >   await movie.deleteMovie(req.params._id,<span class="fstat-no" title="function not covered" >fu</span>nction(err,data){</span>
+<span class="cstat-no" title="statement not covered" >        if(err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >        res.json(data);</span>
+<span class="cstat-no" title="statement not covered" >        delet.write(JSON.stringify(data)+"\n");</span>
+    })
+&nbsp;
+&nbsp;
+})
+&nbsp;
+&nbsp;
+&nbsp;
+router.put('/:_id', <span class="fstat-no" title="function not covered" >as</span>ync function(req,res){
+<span class="cstat-no" title="statement not covered" >    if(!req.body.movieid||!req.body.moviename||!req.body.rating||isNan(req.params._id))</span>
+    {
+        var result=<span class="cstat-no" title="statement not covered" >new Error();</span>
+    }
+    else{
+    var newmovie=<span class="cstat-no" title="statement not covered" >{</span>
+        movieid:req.body.movieid,
+        moviename:req.body.moviename,
+        rating:req.body.rating
+    }
+<span class="cstat-no" title="statement not covered" >    joi.validate(newmovie, schem, <span class="fstat-no" title="function not covered" >fu</span>nction (err, value) {</span>
+        // Value is the parsed and validated document.
+<span class="cstat-no" title="statement not covered" >        if (err) {</span>
+<span class="cstat-no" title="statement not covered" >         console.log("please enter valid details")}</span>
+         else{
+<span class="cstat-no" title="statement not covered" >    movie.updateMovie(req.params._id,newmovie,<span class="fstat-no" title="function not covered" >fu</span>nction(err,data){</span>
+<span class="cstat-no" title="statement not covered" >        if(err) <span class="cstat-no" title="statement not covered" >throw err;</span></span>
+<span class="cstat-no" title="statement not covered" >        res.json(data); </span>
+<span class="cstat-no" title="statement not covered" >        console.log(data);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        updated.write(JSON.stringify(data)+"\n");</span>
+    })
+}
+<span class="cstat-no" title="statement not covered" >if(result instanceof Error)</span>
+{
+<span class="cstat-no" title="statement not covered" >    console.log("Error has occured")</span>
+}
+})}
+&nbsp;
+    })
+&nbsp;
+module.exports=router</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Feb 13 2018 17:07:26 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>

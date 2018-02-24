@@ -1,0 +1,22 @@
+<p>
+  get works!
+</p>
+<table style="width:100%">
+  <tr>
+    <th>Movieid</th>
+    <th>Moviename</th> 
+    <th>Rating</th>
+  </tr>
+  <tbody>
+  <tr *ngFor="let movie of movie">
+    <td>{{movie.movieid}}</td>
+    <td>{{movie.moviename}}</td> 
+    <td>{{movie.rating}}</td>
+    <td width="275">
+     
+      <a class="btn btn-danger" (click)="delete(movie._id)">Delete</a>
+  </td>
+  </tr>
+</tbody>
+ 
+</table>
