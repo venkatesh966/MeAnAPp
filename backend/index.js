@@ -19,7 +19,7 @@ app.get('/',async function(req,res)
    }
 
    mongoconnection();
- 
+ console.log("I am checking jenkins");
 
     app.use(bodyparser.urlencoded({extended:true}));
     app.use(bodyparser.json());
